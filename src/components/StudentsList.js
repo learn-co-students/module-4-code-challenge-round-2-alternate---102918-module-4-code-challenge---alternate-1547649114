@@ -1,7 +1,9 @@
 import React from "react";
 import Student from "./Student";
 
-const StudentsList = () => {
+const StudentsList = props => {
+let list = props.students.students.map(student => <Student student={student} />);
+
   return (
     <table className="ui celled striped padded table">
       <tbody>
@@ -20,7 +22,7 @@ const StudentsList = () => {
           </th>
         </tr>
 
-        {/* Your code here */}
+        {list}
       </tbody>
     </table>
   );
