@@ -1,8 +1,10 @@
 import React from "react";
 import Student from "./Student";
 
-const StudentsList = () => {
+const StudentsList = (props) => {
+
   return (
+
     <table className="ui celled striped padded table">
       <tbody>
         <tr>
@@ -20,10 +22,16 @@ const StudentsList = () => {
           </th>
         </tr>
 
-        {/* Your code here */}
+        {props.students.map(student => <Student handleEdit={props.handleEdit} key={student.id} student={student}/>)}
       </tbody>
     </table>
   );
 };
 
 export default StudentsList;
+
+
+// class_year: 11
+// id: 1
+// name: "Mr. Aletha Stroman"
+// percentage: 86
