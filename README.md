@@ -20,7 +20,7 @@ Before the code challenge begins, you will receive a user ID from your instructo
 
 The endpoints you need to hit are listed below. *Note: the routes below are the only routes that exist on this API. If you try to visit other routes, you'll get an error page.*
 
-* GET: `https://bayside-high.herokuapp.com/api/v1/users/:user_id/courses`
+* GET: `https://bayside-high.herokuapp.com/api/v1/users/1/courses`
 Returns an array of all courses.
 ```
 GET: `https://bayside-high.herokuapp.com/api/v1/users/:user_id/courses`
